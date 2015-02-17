@@ -14,6 +14,7 @@ html,body {
 
 #w {
 	margin: 0 auto;
+	max-width:100%;
 }
 img.absolute {
 	position: absolute;
@@ -27,10 +28,12 @@ section.logo {
 	float:left;
 }
 
+
+
 nav {
 	text-align: right;
 }
-nav .basic, nav .basket, nav .content {
+nav .basic, nav .basket, nav .menu {
 	display:inline-block;
 	text-align:center;
 }
@@ -51,7 +54,7 @@ nav .basic a {
 	margin: 1em;
 	display: inline-block;
 }
-nav .content a {
+nav .menu a {
 	color: #007ec2;
 	margin: 1em;
 	display: inline-block;
@@ -79,4 +82,69 @@ nav .content a {
 }
 .clear {
 	clear:both;
+}
+
+figure.item{
+	/*display: inline-block;*/
+	display:inline-block;
+	text-align: center;
+	border:1px solid #f1f1f1;
+}
+
+figure.item {
+	/*max-width:322px;*/
+	max-width:99%;
+	margin:.5%
+}
+
+
+
+.content {
+	text-align: center;
+	max-width:100%;
+}
+.content figure img {
+    vertical-align: middle;
+    /*height:258px;*/
+    max-width: 100%;
+}
+
+figure.item .helper {
+	display: inline-block;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+figure.item .frame{
+	width:100%;
+    border: 1px solid red;
+    /*white-space: nowrap;*/
+    
+    text-align: center; margin: 0;
+    margin:0;
+	padding:0;
+}
+
+figure.item figcaption {
+	font-size:.875em;
+}
+
+
+
+@media only screen and (min-width: 12.5em) { /*200px */
+	    figure.item {
+		/*max-width:322px;*/
+		max-width:45%;
+
+		
+	}
+}
+
+@media only screen and (min-width: 18.75em) { /*300px*/
+	    figure.item {
+		/*max-width:322px;*/
+		max-width:30%;
+
+		
+	}
 }
