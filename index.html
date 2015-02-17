@@ -9,7 +9,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="cleartype" content="on">
 
-        <!-- iPad and iPad mini (with @2× display) iOS ≥ 8 -->
         <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/touch/apple-touch-icon-180x180-precomposed.png">
         <!-- iPad 3+ (with @2× display) iOS ≥ 7 -->
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/touch/apple-touch-icon-152x152-precomposed.png">
@@ -63,9 +62,50 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/enhanced.css" media="screen  and (min-width: 40.5em)" />
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+        <div id="w">
+            <header>
+                <section class="logo">
+                    <img src="gfx/logo-dafi.png">
+                </section>
+                <nav>
+                    <section class="basic">
+                        <a href="#">Rejestracja</a>
+                        <a href="#">Logowanie</a>
+                        <a href="#">Zmiana języka</a>
+                    </section>
+                    <section class="basket">
+                        <img class="absolute" alt="basket" src="gfx/basket.png">
+                        <strong>Koszyk:</strong> 0,00zł (0 prod.)
+                    </section>
+                   
+                    </section>
+
+                    <section class="content">
+                        <a href="#">Produkty kuchenne</a>
+                        <a href="#">Produkty do instalacji</a>
+                        <a href="#">Eko-Dafi</a>
+                        <a href="#">O firmie</a>
+                        <a href="#">Sieć sprzedaży</a>
+                        <a href="#">Obsługa klienta</a>
+                    </section>
+                    <br class="clear">
+                </nav>
+            </header>
+            <nav class="breadcrumb">
+                <a href="#">Start</a><span>›</span><a href="#">Do kuchni</a><span>›</span><a href="#">Dzbanki filtrujące</a>
+            </nav>
+            <section class="presentation"></section>
+            <section class="filter"></section>
+            <section class="content"></section>
+            <section class="footer"></section>
+        </div>
+
 
         <!-- Add your site or application content here -->
 
