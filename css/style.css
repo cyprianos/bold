@@ -347,14 +347,14 @@ figure.item .price {
 
 .presentation h1{
 	font-size:2em;
-	font-weight:bold;
+	font-weight:300;
 	text-align:center;
 	color: #007ec2;
 	/*margin: 5%;*/
 }
 .presentation h2{
 	font-size:2em;
-	font-weight:normal;
+	font-weight:100;
 	text-align:center;
 	color: #007ec2;
 
