@@ -238,32 +238,24 @@ nav .basket {
 	/*show small menu*/
 }
 
-@media only screen and (min-width: 33.750em) {/*540px*/
-	nav .basket {
-		display:inline-block;
-		width:auto;
-	}
-	#mobilemenu {
-		display:none;
-	}
-	section.logo {
-		padding-top:0;
-		width:auto;
-	}
 
-	section.basic{
-		width:auto;
-	}
-
-	section.logo {
-		width:auto;
-		float:left;
-		padding-top:0;
-	}	
-}
 
 .filter figure {
 	vertical-align: middle;
+	display:block;
+	text-align:center;
+	/*position:absolute;*/
+	border: 1px solid #efefef;
+	min-height:3.5em;
+	line-height:3.5em;
+	margin:0 auto;
+	border-bottom:0;
+
+	
+	
+}
+.filter .color {
+	border-bottom: 1px solid #efefef;
 }
 
 .filter .catname {
@@ -271,9 +263,12 @@ nav .basket {
 	font-weight:normal;
 	font-size:0.875em; /*14px*/
 	color:#1086c6;
+	padding:0 0.813em;
+	/*display:none;*/
 }
 
 .filter button {
+	vertical-align: middle;
 	/*background-color: red;*/
 	display:inline-block;
 	background-image: url("../gfx/checkbox_blue.png");
@@ -282,11 +277,13 @@ nav .basket {
 	width:20px;
 	height:20px;
 	background-color:white;
+	margin-right: 0.563em;
 }
 .filter .option {
 	font-size:0.688em; /*11px*/
 	font-weight: normal;
 	color: #757575;
+	display:none;
 }
 .filter .color button {
 	box-sizing: border-box;
@@ -309,4 +306,36 @@ nav .basket {
 }
 .filter .color .yellow{
 	border:3px solid #ffe17a;
+}
+
+.filter div {
+	display:inline-block;
+}
+
+
+@media only screen and (min-width: 33.750em) {/*540px*/
+	nav .basket {
+		display:inline-block;
+		width:auto;
+	}
+	#mobilemenu {
+		display:none;
+	}
+	section.logo {
+		padding-top:0;
+		width:auto;
+	}
+
+	section.basic{
+		width:auto;
+	}
+
+	section.logo {
+		width:auto;
+		float:left;
+		padding-top:0;
+	}
+	.filter .option{
+		display:inline-block;
+	}
 }
