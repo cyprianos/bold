@@ -39,3 +39,7 @@ nav {
 .filter .wklad, .filter .wskaznik {
 	border-right: 1px solid #efefef;
 }
+
+.content {
+	text-align: center;
+}

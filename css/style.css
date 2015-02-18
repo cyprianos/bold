@@ -191,7 +191,7 @@ figure.item .price {
 /*code for 3 parallel items */
 @media only screen and (min-width: 30em) { /*300px*/
 	figure.item {
-		max-width:31.5%;		
+		max-width:32%;		
 	}
 
 	.content figure:nth-child(3n) {
@@ -224,15 +224,16 @@ figure.item .price {
 
 	}
 
-nav .basic  {
-	/*text-align: right;*/
-	display:inline-block;
-}
 
-nav .basket {
-	/*text-align:right;*/
-	display:inline-block;
-}
+	nav .basic  {
+		/*text-align: right;*/
+		display:inline-block;
+	}
+
+	nav .basket {
+		/*text-align:right;*/
+		display:inline-block;
+	}
 	
 
 	/*show small menu*/
@@ -343,3 +344,68 @@ nav .basket {
 .filter .row {
 	width:100%;
 }
+
+.presentation h1{
+	font-size:2em;
+	font-weight:bold;
+	text-align:center;
+	color: #007ec2;
+	/*margin: 5%;*/
+}
+.presentation h2{
+	font-size:2em;
+	font-weight:normal;
+	text-align:center;
+	color: #007ec2;
+
+		/*margin:0 1%;*/
+}
+
+.presentation img{
+	max-width:100%;
+}
+
+.presentation p {
+	font-style: italic;
+	font-size: 0.875em;
+	color: #757575;
+	text-align:center;
+}
+
+
+.presentation .left, .presentation .right {
+	width:100%;
+	text-align: center;
+}
+
+@media only screen and (min-width: 48.125em) {
+	.presentation .right {
+		text-align:right;float:left;
+		width:50%;
+	}
+	.presentation .left {
+		float:left;
+		width:50%;
+		margin-top:2em;
+	}
+	.presentation {
+		/*vertical-align: top;*/
+		border: 10px solid #f0f0f0;
+		padding:0;
+	}
+	.presentation p {
+		padding: 0 4.688em;
+	}
+
+	.presentation h1{
+	font-size:3em;
+	margin-bottom:1em;
+	/*margin: 5%;*/
+	}
+	.presentation h2{
+		font-size:3em;
+		margin-bottom:1.5em;
+			/*margin:0 1%;*/
+	}
+}
+
