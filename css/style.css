@@ -28,8 +28,6 @@ section.logo {
 	float:left;
 }
 
-
-
 nav {
 	text-align: right;
 }
@@ -130,21 +128,28 @@ figure.item figcaption {
 }
 
 
+@media only screen and (min-width: 20em) and (max-width:30em) { /*200px */
+	figure.item {
+		max-width:45%;	
+	}
 
-@media only screen and (min-width: 12.5em) { /*200px */
-	    figure.item {
-		/*max-width:322px;*/
-		max-width:45%;
-
-		
+	.content figure:nth-child(2n) {
+		margin-right:0;
+	}
+	.content figure:nth-child(2n+1) {
+		margin-left:0;
 	}
 }
 
-@media only screen and (min-width: 18.75em) { /*300px*/
-	    figure.item {
-		/*max-width:322px;*/
-		max-width:30%;
+@media only screen and (min-width: 30em) { /*300px*/
+	figure.item {
+		max-width:31%;		
+	}
 
-		
+	.content figure:nth-child(3n) {
+		margin-right:0;
+	}
+	.content figure:nth-child(3n+1) {
+		margin-left:0;
 	}
 }
