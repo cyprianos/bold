@@ -223,6 +223,16 @@ figure.item .price {
 
 	}
 	
+nav .basic  {
+	/*text-align: right;*/
+	display:inline-block;
+}
+
+nav .basket {
+	/*text-align:right;*/
+	display:inline-block;
+}
+	
 
 	/*show small menu*/
 }
