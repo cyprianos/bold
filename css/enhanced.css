@@ -11,3 +11,31 @@
 nav {
 	text-align:right;
 }
+
+.filter {
+	text-align:left;
+}
+.filter figure {
+	display:inline-block;
+	text-align: center;
+	padding: 0 1em;
+}
+
+.filter figure div {
+	padding:0 1em;
+}
+
+.filter .row1 {
+	border: 1px solid #efefef;
+}
+.filter .row2 {
+	border:1px solid #efefef;
+	border-top:0;
+}
+
+.filter figure {
+	border:0;
+}
+.filter .wklad, .filter .wskaznik {
+	border-right: 1px solid #efefef;
+}

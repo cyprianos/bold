@@ -339,3 +339,7 @@ nav .basket {
 		display:inline-block;
 	}
 }
+
+.filter .row {
+	width:100%;
+}
