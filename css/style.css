@@ -123,6 +123,9 @@ figure.item{
 	text-align: center;
 	border:1px solid #f1f1f1;
 }
+figure.item:hover{
+	border:1px solid #1086c6;
+}
 
 figure.item {
 	/*max-width:322px;*/
@@ -214,15 +217,13 @@ figure.item .price {
 	/*show small menu*/
 }
 @media only screen and (min-width: 57.5em) {
-	
-	
 	section.logo img{
 		max-width:100%;
 	}
 	section.logo {
 
 	}
-	
+
 nav .basic  {
 	/*text-align: right;*/
 	display:inline-block;
@@ -258,11 +259,54 @@ nav .basket {
 		width:auto;
 		float:left;
 		padding-top:0;
-	}
+	}	
+}
 
+.filter figure {
+	vertical-align: middle;
+}
 
+.filter .catname {
+	color:#1086c6;
+	font-weight:normal;
+	font-size:0.875em; /*14px*/
+	color:#1086c6;
+}
 
-
-
-	
+.filter button {
+	/*background-color: red;*/
+	display:inline-block;
+	background-image: url("../gfx/checkbox_blue.png");
+	background-position: center center;
+	border:0;
+	width:20px;
+	height:20px;
+	background-color:white;
+}
+.filter .option {
+	font-size:0.688em; /*11px*/
+	font-weight: normal;
+	color: #757575;
+}
+.filter .color button {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.filter .color .orange{
+	border:3px solid #ff6000;
+}
+.filter .color .blue{
+	border:3px solid #59d2d3;
+}
+.filter .color .green{
+	border:3px solid #31db45;
+}
+.filter .color .red{
+	border:3px solid #eb0011;
+}
+.filter .color .black{
+	border:3px solid #303030;
+}
+.filter .color .yellow{
+	border:3px solid #ffe17a;
 }
