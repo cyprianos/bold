@@ -24,26 +24,58 @@ img.absolute {
 }
 
 section.logo {
-	text-align: right;
-	float:left;
+	text-align: center;
+	/*float:left;*/
+	width:100%;
+	padding-top:3em;
+	/*display:none;*/
+}
+section.logo img {
+	max-width:50%;
 }
 
 nav {
-	text-align: right;
+	/*text-align: right;*/
 }
-nav .basic, nav .basket, nav .menu {
+nav .basic, .basket, nav .menu {
 	display:inline-block;
 	text-align:center;
+	
+}
+.basic {
+	width:100%;
 }
 
+header .basket {
+	display:none;
+}
+#mobilemenu {
+	text-align:center;
+	position:fixed;
+	left:0;
+	right:0;
+	background-color:rgba(0,0,0,0.3);
 
-nav .basket {
+}
+#mobilemenu .basket {
+	margin: 0.5em auto;
+	/*float:none;*/
+	border:1px #002000 white;
+}
+.basket {
+
 	border: 1px solid #ccecff;
 	position:relative;
 	padding:0.438em 1.25em 0.438em 3.438em;  /*7px*/
 	font-size: 0.875em;
 	/*padding-left:;*/
 	margin-top:0.5em;/*2px - for vertical align */
+}
+.basket strong{
+	display:none;
+}
+.basket .count {
+	display:none;
 }
 
 nav .basic a {
@@ -60,6 +92,9 @@ nav .menu a {
 
 }
 .breadcrumb {
+	/*text-align:center;*/
+	display:none;
+	margin:1.250em;
 	text-align:center;
 }
 
@@ -125,9 +160,18 @@ figure.item .frame{
 
 figure.item figcaption {
 	font-size:.875em;
+	color: #757575;
+	margin: 1em;
+}
+figure.item .price {
+	font-weight:bold;
+	color:#303030;
+	margin: 1em;
+	display:block;
+	font-size:.875em;
 }
 
-
+/*code for 2 parallel items */
 @media only screen and (min-width: 20em) and (max-width:30em) { /*200px */
 	figure.item {
 		max-width:45%;	
@@ -139,11 +183,12 @@ figure.item figcaption {
 	.content figure:nth-child(2n+1) {
 		margin-left:0;
 	}
-}
 
+}
+/*code for 3 parallel items */
 @media only screen and (min-width: 30em) { /*300px*/
 	figure.item {
-		max-width:31%;		
+		max-width:31.5%;		
 	}
 
 	.content figure:nth-child(3n) {
@@ -152,4 +197,62 @@ figure.item figcaption {
 	.content figure:nth-child(3n+1) {
 		margin-left:0;
 	}
+	.breadcrumb {
+		display:block;
+	}
+	
+}
+
+
+@media only screen and (min-width: 40.625em) {
+	
+	
+	nav .basket .count, nav .basket strong {
+	display:inline;
+}
+
+	/*show small menu*/
+}
+@media only screen and (min-width: 57.5em) {
+	
+	
+	section.logo img{
+		max-width:100%;
+	}
+	section.logo {
+
+	}
+	
+
+	/*show small menu*/
+}
+
+@media only screen and (min-width: 33.750em) {/*540px*/
+	nav .basket {
+		display:inline-block;
+		width:auto;
+	}
+	#mobilemenu {
+		display:none;
+	}
+	section.logo {
+		padding-top:0;
+		width:auto;
+	}
+
+	section.basic{
+		width:auto;
+	}
+
+	section.logo {
+		width:auto;
+		float:left;
+		padding-top:0;
+	}
+
+
+
+
+
+	
 }
